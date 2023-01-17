@@ -1,0 +1,23 @@
+.display-none{
+    display: none !important;
+}
+.info-view div{
+    margin-top: 25px;
+}
+.item-cost{
+    font-size: larger;
+    margin: 5px;
+}
+.property-type{
+    font-size: medium;
+    margin: 5px;
+}
+.commercial-view{
+    font-size: medium;
+    margin: 5px;
+}
+.contact-page{
+    width: 1120px ;
+    margin: 0 auto;
+    height: auto;
+}

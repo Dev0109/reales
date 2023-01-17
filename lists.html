@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>reales | real estate web application</title>
+        <script defer src="js/all.js"></script>
+        <link href="css/all.css" rel="stylesheet" />
+        <link href="css/font-awesome.css" rel="stylesheet">
+
+        <link href="css/simple-line-icons.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="css/datepicker.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="notransition">
+
+        <!-- Header -->
+
+        <div id="header">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="fa fa-home marker"></span>
+                    <span class="logoText">reales</span>
+                </a>
+            </div>
+            <a href="#" class="navHandler"><span class="fa fa-bars"></span></a>
+            <div class="search">
+                <span class="searchIcon icon-magnifier"></span>
+                <input type="text" placeholder="Search for houses, apartments...">
+            </div>
+            <div class="headerUserWraper">
+                <a href="#" class="userHandler dropdown-toggle" data-toggle="dropdown"><span class="icon-user"></span><span class="counter">5</span></a>
+                <a href="#" class="headerUser dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar headerAvatar pull-left" src="images/avatar-1.png" alt="avatar">
+                    <div class="userTop pull-left">
+                        <span class="headerUserName">John Smith</span> <span class="fa fa-angle-down"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+                <div class="dropdown-menu pull-right userMenu" role="menu">
+                    <div class="mobAvatar">
+                        <img class="avatar mobAvatarImg" src="images/avatar-1.png" alt="avatar">
+                        <div class="mobAvatarName">John Smith</div>
+                    </div>
+                    <ul>
+                        <li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+                        <li><a href="profile.html"><span class="icon-user"></span>Profile</a></li>
+                        <li><a href="#"><span class="icon-bell"></span>Notifications <span class="badge pull-right bg-red">5</span></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon-power"></span>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="headerNotifyWraper">
+                <a href="#" class="headerNotify dropdown-toggle" data-toggle="dropdown">
+                    <span class="notifyIcon icon-bell"></span>
+                    <span class="counter">5</span>
+                </a>
+                <div class="dropdown-menu pull-right notifyMenu" role="menu">
+                    <div class="notifyHeader">
+                        <span>Notifications</span>
+                        <a href="#" class="notifySettings icon-settings"></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="notifyList">
+                        <li>
+                            <a href="#">
+                                <img class="avatar pull-left" src="images/avatar-1.png" alt="avatar">
+                                <div class="pulse border-grey"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">Sed ut perspiciatis unde</div>
+                                    <div class="notifyTime">5 minutes ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-red fa fa-envelope-o"></div>
+                                <div class="pulse border-red"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">Lorem Ipsum is simply dummy text</div>
+                                    <div class="notifyTime">20 minutes ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-yellow fa fa-heart-o"></div>
+                                <div class="pulse border-yellow"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">It is a long established fact</div>
+                                    <div class="notifyTime">2 hours ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-magenta fa fa-paper-plane-o"></div>
+                                <div class="pulse border-magenta"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">There are many variations</div>
+                                    <div class="notifyTime">1 day ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="notifyAll">See All</a>
+                </div>
+            </div>
+            <a href="#" class="mapHandler"><span class="icon-map"></span></a>
+            <div class="clearfix"></div>
+        </div>
+
+        <!-- Left Side Navigation -->
+
+        <div id="leftSide">
+            <nav class="leftNav scrollable">
+                <div class="search">
+                    <span class="searchIcon icon-magnifier"></span>
+                    <input type="text" placeholder="Search for houses, apartments...">
+                    <div class="clearfix"></div>
+                </div>
+                <ul>
+                    <li><a href="explore.html"><span class="navIcon icon-compass"></span><span class="navLabel">Explore</span></a></li>
+                    <li><a href="single.html"><span class="navIcon icon-home"></span><span class="navLabel">Single</span></a></li>
+                    <li><a href="add.html"><span class="navIcon icon-plus"></span><span class="navLabel">New</span></a></li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-drop"></span><span class="navLabel">Colors</span><span class="fa fa-angle-left arrowRight"></span><span class="badge bg-yellow">5</span></a>
+                        <ul class="colors">
+                            <li><a href="#">Red <span class="fa fa-circle-o c-red icon-right"></span></a></li>
+                            <li><a href="#">Green <span class="fa fa-circle-o c-green icon-right"></span></a></li>
+                            <li><a href="#">Blue <span class="fa fa-circle-o c-blue icon-right"></span></a></li>
+                            <li><a href="#">Yellow <span class="fa fa-circle-o c-yellow icon-right"></span></a></li>
+                            <li><a href="#">Magenta <span class="fa fa-circle-o c-magenta icon-right"></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-layers"></span><span class="navLabel">Elements</span><span class="fa fa-angle-left arrowRight"></span></a>
+                        <ul>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="icons.html">Icons <span class="badge pull-right bg-yellow">841</span></a></li>
+                            <li><a href="grid.html">Grid</a></li>
+                            <li><a href="widgets.html">Widgets</a></li>
+                            <li><a href="components.html">Components</a></li>
+                            <li><a href="lists.html">Lists</a></li>
+                            <li><a href="tables.html">Tables</a></li>
+                            <li><a href="form.html">Form</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-link"></span><span class="navLabel">Pages</span><span class="fa fa-angle-left arrowRight"></span></a>
+                        <ul>
+                            <li><a href="signin.html">Sign In</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="index.html">Homepage Slideshow</a></li>
+                            <li><a href="index-map.html">Homepage Map</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="leftUserWraper dropup">
+                <a href="#" class="avatarAction dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar" src="images/avatar-1.png" alt="avatar"><span class="counter">5</span>
+                    <div class="userBottom pull-left">
+                        <span class="bottomUserName">John Smith</span> <span class="fa fa-angle-up pull-right arrowUp"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+                    <li><a href="profile.html"><span class="icon-user"></span>Profile</a></li>
+                    <li><a href="#"><span class="icon-bell"></span>Notifications <span class="badge pull-right bg-red">5</span></a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><span class="icon-power"></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="closeLeftSide"></div>
+
+        <!-- Content -->
+
+        <div id="wrapper" class="full">
+            <div id="mapView" class="min"><div class="mapPlaceholder"><span class="fa fa-spin fa-spinner"></span> Loading map...</div></div>
+            <div id="content" class="max">
+                <div class="lists">
+                    <h4>Lists</h4>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <h5>Simple List <small>(with icons and badges)</small></h5>
+                            <div class="list-group">
+                                <a class="list-group-item"><span class="fa fa-bell text-green"></span> Cras justo odio <span class="fa fa-angle-right arrow"></span> <span class="badge badge-green">240</span></a>
+                                <a class="list-group-item"><span class="fa fa-bar-chart text-red"></span> Dapibus ac facilisis in <span class="fa fa-angle-right arrow"></span> <span class="badge badge-red">13</span></a>
+                                <a class="list-group-item"><span class="fa fa-cloud-upload text-blue"></span> Morbi leo risus <span class="fa fa-angle-right arrow"></span> <span class="badge badge-blue">36</span></a>
+                                <a class="list-group-item"><span class="fa fa-heart text-yellow"></span> Porta ac consectetur ac <span class="fa fa-angle-right arrow"></span> <span class="badge badge-yellow">156</span></a>
+                                <a class="list-group-item"><span class="fa fa-paper-plane text-magenta"></span> Vestibulum at eros <span class="fa fa-angle-right arrow"></span> <span class="badge badge-magenta">28</span></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <h5>Sortable List <small>(drag items to sort)</small></h5>
+                            <ul class="list-group list-group-sortable sortable">
+                                <li class="list-group-item helper-green">
+                                    <span class="fa fa-unsorted icon-fade"></span> Rust Cohle
+                                    <a href="#" class="pull-right text-magenta icon-action"><span class="icon-share"></span></a>
+                                    <a href="#" class="pull-right text-yellow icon-action"><span class="icon-bubble"></span></a>
+                                    <a href="#" class="pull-right text-green icon-action"><span class="icon-call-out"></span></a>
+                                </li>
+                                <li class="list-group-item helper-red">
+                                    <span class="fa fa-unsorted icon-fade"></span> John Smith
+                                    <a href="#" class="pull-right text-magenta icon-action"><span class="icon-share"></span></a>
+                                    <a href="#" class="pull-right text-yellow icon-action"><span class="icon-bubble"></span></a>
+                                    <a href="#" class="pull-right text-green icon-action"><span class="icon-call-out"></span></a>
+                                </li>
+                                <li class="list-group-item helper-blue">
+                                    <span class="fa fa-unsorted icon-fade"></span> Alex Rogers
+                                    <a href="#" class="pull-right text-magenta icon-action"><span class="icon-share"></span></a>
+                                    <a href="#" class="pull-right text-yellow icon-action"><span class="icon-bubble"></span></a>
+                                    <a href="#" class="pull-right text-green icon-action"><span class="icon-call-out"></span></a>
+                                </li>
+                                <li class="list-group-item helper-yellow">
+                                    <span class="fa fa-unsorted icon-fade"></span> Jane Smith
+                                    <a href="#" class="pull-right text-magenta icon-action"><span class="icon-share"></span></a>
+                                    <a href="#" class="pull-right text-yellow icon-action"><span class="icon-bubble"></span></a>
+                                    <a href="#" class="pull-right text-green icon-action"><span class="icon-call-out"></span></a>
+                                </li>
+                                <li class="list-group-item helper-magenta">
+                                    <span class="fa fa-unsorted icon-fade"></span> Antony Iglesias
+                                    <a href="#" class="pull-right text-magenta icon-action"><span class="icon-share"></span></a>
+                                    <a href="#" class="pull-right text-yellow icon-action"><span class="icon-bubble"></span></a>
+                                    <a href="#" class="pull-right text-green icon-action"><span class="icon-call-out"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <h5>Nested Sortable Lists <small>(drag items to sort and group)</small></h5>
+                            <ol class="list-ns">
+                                <li class="list-ns-branch list-ns-collapsed helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 1</div>
+                                    <ol>
+                                        <li class="list-ns-branch list-ns-collapsed helper-green">
+                                            <div><span class="disclose"><span></span></span>Sub Item 1.1</div>
+                                            <ol>
+                                                <li class="list-ns-leaf helper-green">
+                                                    <div><span class="disclose"><span></span></span>Sub Item 1.2</div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="list-ns-leaf helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 2</div>
+                                </li>
+                                <li class="list-ns-branch list-ns-collapsed helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 3</div>
+                                    <ol>
+                                        <li class="list-ns-leaf helper-green">
+                                            <div><span class="disclose"><span></span></span>Sub Item 3.1 (no nesting)</div>
+                                        </li>
+                                        <li class="list-ns-branch list-ns-collapsed helper-green">
+                                            <div><span class="disclose"><span></span></span>Sub Item 3.2</div>
+                                            <ol>
+                                                <li class="list-ns-leaf helper-green">
+                                                    <div><span class="disclose"><span></span></span>Sub Item 3.2.1</div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="list-ns-leaf helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 4</div>
+                                </li>
+                                <li class="list-ns-leaf helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 5</div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <h5>Nested Sortable Lists with Handler <small>(drag items using the right handler to sort and group)</small></h5>
+                            <ol class="list-ns list-ns-1">
+                                <li class="list-ns-branch list-ns-collapsed helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 1<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                    <ol>
+                                        <li class="list-ns-branch list-ns-collapsed helper-green">
+                                            <div><span class="disclose"><span></span></span>Sub Item 1.1<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                            <ol>
+                                                <li class="list-ns-leaf helper-green">
+                                                    <div><span class="disclose"><span></span></span>Sub Item 1.2<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="list-ns-leaf helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 2<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                </li>
+                                <li class="list-ns-branch list-ns-collapsed helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 3<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                    <ol>
+                                        <li class="list-ns-leaf helper-green">
+                                            <div><span class="disclose"><span></span></span>Sub Item 3.1 (no nesting)</div>
+                                        </li>
+                                        <li class="list-ns-branch list-ns-collapsed helper-green">
+                                            <div><span class="disclose"><span></span></span>Sub Item 3.2<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                            <ol>
+                                                <li class="list-ns-leaf helper-green">
+                                                    <div><span class="disclose"><span></span></span>Sub Item 3.2.1<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="list-ns-leaf helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 4<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                </li>
+                                <li class="list-ns-leaf helper-green">
+                                    <div><span class="disclose"><span></span></span>Item 5<span class="fa fa-bars list-ns-handler pull-right"></span></div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-touch-punch.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/jquery.slimscroll.min.js"></script>
+        <script src="js/jquery.visible.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=true&amp;libraries=geometry&amp;libraries=places" type="text/javascript"></script>
+        <script src="js/jquery.mjs.nestedSortable.js"></script>
+        <script src="js/infobox.js"></script>
+        <script src="js/jquery.tagsinput.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="js/sortable.js"></script>
+    </body>
+</html>

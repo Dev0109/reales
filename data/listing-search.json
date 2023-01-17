@@ -1,0 +1,68 @@
+{
+    "Items": [
+        {
+            "Filters": {
+                "Rural": {
+                    "PropertyTypes": [
+                        "Cropping",
+                        "Lifestyle",
+                        "MixedFarming",
+                        "Other"
+                    ],
+                    "Suburbs": [
+                        "BIALA",
+                        "BOXERS CREEK",
+                        "BUNGONIA",
+                        "CROOKWELL",
+                        "CURRAWANG",
+                        "GOULBURN",
+                        "MARULAN",
+                        "MIDDLE ARM",
+                        "TARALGA",
+                        "WINDELLAMA",
+                        "WOMBEYAN CAVES"
+                    ]
+                },
+                "Commercial": {
+                    "PropertyTypes": [
+                        "Land/Development",
+                        "Offices"
+                    ],
+                    "Suburbs": [
+                        "GOULBURN"
+                    ]
+                },
+                "Residential": {
+                    "PropertyTypes": [
+                        "AcreageSemirural",
+                        "BlockOfUnits",
+                        "House",
+                        "Other"
+                    ],
+                    "Suburbs": [
+                        "BUNGONIA",
+                        "CROOKWELL",
+                        "GOULBURN",
+                        "GRABBEN GULLEN"
+                    ]
+                },
+                "Land": {
+                    "PropertyTypes": [
+                        "Residential"
+                    ],
+                    "Suburbs": [
+                        "BANNABY",
+                        "BINDA",
+                        "CROOKWELL",
+                        "GOULBURN",
+                        "LAKE BATHURST"
+                    ]
+                }
+            },
+            "Version": 25,
+            "ClientId": "1b7e5258-fbaa-4676-b490-f4681a8f3559"
+        }
+    ],
+    "Count": 1,
+    "ScannedCount": 1
+}

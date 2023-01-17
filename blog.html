@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>reales | real estate web application</title>
+        <script defer src="js/all.js"></script>
+        <link href="css/all.css" rel="stylesheet" />
+        <link href="css/font-awesome.css" rel="stylesheet">
+
+        <link href="css/simple-line-icons.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="notransition no-hidden">
+        <div class="blog-search">
+            <input type="search" placeholder="Search the blog..." class="osLight">
+        </div>
+
+        <!-- Hero -->
+
+        <div id="hero-container-blog">
+            <div id="carouselBlog" class="carousel slide featured" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselBlog" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselBlog" data-slide-to="1"></li>
+                    <li data-target="#carouselBlog" data-slide-to="2"></li>
+                    <li data-target="#carouselBlog" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active" style="background-image: url(images/blog-1.jpg)">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <div class="carousel-title">Featured on Blog</div>
+                                <div class="caption-title">The Psychology of Achieving Balance In Interior Design</div>
+                                <div class="caption-subtitle">Interior design is about so much more than sense of style. We’ve already talked about your design choices are influencing your subconscious, but that’s just scratching the surface.</div>
+                                <a href="blog-post.html" class="btn btn-lg btn-o btn-white">Read More</a>
+                            </div>
+                            <div class="avatar-caption">
+                                <img src="images/avatar-1.png" alt="avatar">
+                                <div class="ac-user">
+                                    <div class="ac-name">John Smith on Sep 4, 2014</div>
+                                    <div class="ac-title">Senior Blog Editor</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(images/blog-2.jpg)">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <div class="carousel-title">Featured on Blog</div>
+                                <div class="caption-title">Why Green Architecture Is The Perfect Investment for Your Home</div>
+                                <div class="caption-subtitle">We all want to help the environment – or at least we know we should – but when it comes to actually implementing sustainable practices, the task often seems too daunting.</div>
+                                <a href="blog-post.html" class="btn btn-lg btn-o btn-white">Read More</a>
+                            </div>
+                            <div class="avatar-caption">
+                                <img src="images/avatar-2.png" alt="avatar">
+                                <div class="ac-user">
+                                    <div class="ac-name">Jane Smith on Sep 3, 2014</div>
+                                    <div class="ac-title">Senior Blog Editor</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(images/blog-3.jpg)">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <div class="carousel-title">Featured on Blog</div>
+                                <div class="caption-title">Why Our Brains Love Symmetry in Design</div>
+                                <div class="caption-subtitle">We all know an example of good interior design when we see it. In fact, most of us can make that judgment almost instantly.</div>
+                                <a href="blog-post.html" class="btn btn-lg btn-o btn-white">Read More</a>
+                            </div>
+                            <div class="avatar-caption">
+                                <img src="images/avatar-3.png" alt="avatar">
+                                <div class="ac-user">
+                                    <div class="ac-name">Rust Cohle on Sep 2, 2014</div>
+                                    <div class="ac-title">Senior Blog Editor</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(images/blog-4.jpg)">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <div class="carousel-title">Featured on Blog</div>
+                                <div class="caption-title">Practical Lighting Size & Placement Guide for Every Corner of the House</div>
+                                <div class="caption-subtitle">We know your are constantly on the lookout for practical design solutions and we enjoy delivering them to you.</div>
+                                <a href="blog-post.html" class="btn btn-lg btn-o btn-white">Read More</a>
+                            </div>
+                            <div class="avatar-caption">
+                                <img src="images/avatar-4.png" alt="avatar">
+                                <div class="ac-user">
+                                    <div class="ac-name">Antony Iglesias on Sep 1, 2014</div>
+                                    <div class="ac-title">Senior Blog Editor</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carouselBlog" role="button" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
+                <a class="right carousel-control" href="#carouselBlog" role="button" data-slide="next"><span class="fa fa-chevron-right"></span></a>
+            </div>
+
+            <!-- Header -->
+
+            <div class="home-header">
+                <div class="home-logo osLight"><span class="fa fa-home"></span> Reales <strong>blog</strong></div>
+                <a href="#" class="home-navHandler visible-xs"><span class="fa fa-bars"></span></a>
+                <a href="#" class="toggle-search"><span class="icon-magnifier"></span></a>
+                <div class="blog-nav">
+                    <ul>
+                        <li><a href="index.html">App Home</a></li>
+                        <li><a href="blog.html">Featured</a></li>
+                        <li><a href="blog.html">Latest</a></li>
+                        <li><a href="blog-post.html">Single Post</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+
+        <div class="blog-content">
+            <div class="home-wrapper">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                        <h2 class="osLight">Latest Posts</h2>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <div class="article">
+                                    <a href="blog-post.html" class="image"><img src="images/post-1.jpg" alt="image"></a>
+                                    <div class="article-category"><a href="#" class="text-green">Architecture</a></div>
+                                    <h3 class="osLight"><a href="blog-post.html">Subtly Twisting Geometry Inserted in Raw Nature</a></h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <div class="footer"><a href="#">John Smith</a>, <a href="#">Sep 4, 2014</a></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="article">
+                                    <a href="blog-post.html" class="image"><img src="images/post-2.jpg" alt="image"></a>
+                                    <div class="article-category"><a href="#" class="text-green">Architecture</a></div>
+                                    <h3 class="osLight"><a href="blog-post.html">Provocative Home Design Re-Shaping The Landscape</a></h3>
+                                    <div class="footer"><a href="#">Jane Smith</a>, <a href="#">Sep 3, 2014</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="article">
+                                    <a href="blog-post.html" class="image"><img src="images/post-3.jpg" alt="image"></a>
+                                    <div class="article-category"><a href="#" class="text-green">Apartments</a></div>
+                                    <h3 class="osLight"><a href="blog-post.html">Luminous 3 Bedroom Apartment Flaunting Modern Style</a></h3>
+                                    <div class="footer"><a href="#">John Smith</a>, <a href="#">Sep 3, 2014</a></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <div class="article">
+                                    <a href="blog-post.html" class="image"><img src="images/post-4.jpg" alt="image"></a>
+                                    <div class="article-category"><a href="#" class="text-green">Living Room</a></div>
+                                    <h3 class="osLight"><a href="blog-post.html">How Does A Designer Home Look Like</a></h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <div class="footer"><a href="#">John Smith</a>, <a href="#">Sep 4, 2014</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="article">
+                                    <a href="blog-post.html" class="image"><img src="images/post-5.jpg" alt="image"></a>
+                                    <div class="article-category"><a href="#" class="text-green">Architecture</a></div>
+                                    <h3 class="osLight"><a href="blog-post.html">Stylish Modern Ranch Exuding a Welcoming Feel</a></h3>
+                                    <div class="footer"><a href="#">John Smith</a>, <a href="#">Sep 3, 2014</a></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="article">
+                                    <a href="blog-post.html" class="image"><img src="images/post-6.jpg" alt="image"></a>
+                                    <div class="article-category"><a href="#" class="text-green">Architecture</a></div>
+                                    <h3 class="osLight"><a href="blog-post.html">Private Contemporary Home Balancing Openness</a></h3>
+                                    <div class="footer"><a href="#">John Smith</a>, <a href="#">Sep 2, 2014</a></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="article">
+                                    <a href="blog-post.html" class="image"><img src="images/post-1.jpg" alt="image"></a>
+                                    <div class="article-category"><a href="#" class="text-green">Architecture</a></div>
+                                    <h3 class="osLight"><a href="blog-post.html">Modern Two-Level Pool House in Los Angeles</a></h3>
+                                    <div class="footer"><a href="#">John Smith</a>, <a href="#">Sep 1, 2014</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-pagination">
+                            <a href="#" class="btn btn-o btn-round btn-green"><span class="fa fa-angle-left"></span> Older Articles</a>
+                            <a href="#" class="btn btn-o btn-round btn-green pull-right">Newer Articles <span class="fa fa-angle-right"></span></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <h2 class="osLight h-r">Categories</h2>
+                                <ul class="blog-r-nav">
+                                    <li><a href="#">Apartments (13)</a></li>
+                                    <li><a href="#">Architecture (12)</a></li>
+                                    <li><a href="#">Bedroom (25)</a></li>
+                                    <li><a href="#">Furniture (34)</a></li>
+                                    <li><a href="#">Ideas (56)</a></li>
+                                    <li><a href="#">Kitchen (16)</a></li>
+                                    <li><a href="#">Living Room (28)</a></li>
+                                    <li><a href="#">Living Room (39)</a></li>
+                                    <li><a href="#">Bathroom (21)</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <h2 class="osLight h-r">Archive</h2>
+                                <ul class="blog-r-nav">
+                                    <li><a href="#">October 2014</a></li>
+                                    <li><a href="#">September 2014</a></li>
+                                    <li><a href="#">August 2014</a></li>
+                                    <li><a href="#">July 2014</a></li>
+                                    <li><a href="#">June 2014</a></li>
+                                    <li><a href="#">May 2014</a></li>
+                                    <li><a href="#">April 2014</a></li>
+                                    <li><a href="#">March 2014</a></li>
+                                    <li><a href="#">February 2014</a></li>
+                                    <li><a href="#">January 2014</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <h2 class="osLight h-r">Popular Tags</h2>
+                                <div class="blog-tags">
+                                    <a href="#" class="label label-default">furniture</a><a href="#" class="label label-default">architect</a><a href="#" class="label label-default">chair</a><a href="#" class="label label-default">modern</a><a href="#" class="label label-default">bathroom</a><a href="#" class="label label-default">table</a><a href="#" class="label label-default">sofa</a><a href="#" class="label label-default">bed</a><a href="#" class="label label-default">design</a><a href="#" class="label label-default">apartment</a><a href="#" class="label label-default">leather</a><a href="#" class="label label-default">lamp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="home-footer">
+            <div class="home-wrapper">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="osLight footer-header">Company</div>
+                        <ul class="footer-nav pb20">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Policies</a></li>
+                            <li><a href="#">Terms & Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="osLight footer-header">Discover</div>
+                        <ul class="footer-nav pb20">
+                            <li><a href="#">Become a Member</a></li>
+                            <li><a href="#">Properties List</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Widgets</a></li>
+                            <li><a href="#">Components</a></li>
+                            <li><a href="#">Tables</a></li>
+                            <li><a href="#">Lists</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="osLight footer-header">Get in Touch</div>
+                        <ul class="footer-nav pb20">
+                            <li class="footer-phone"><span class="fa fa-phone"></span> 800 234 67 89</li>
+                            <li class="footer-address osLight">
+                                <p>516 Green St</p>
+                                <p>San Francisco, CA 94133</p>
+                                <!-- <p>United States</p> -->
+                            </li>
+                            <li><a href="#" class="btn btn-sm btn-icon btn-round btn-o btn-white"><span class="fa fa-facebook"></span></a> <a href="#" class="btn btn-sm btn-icon btn-round btn-o btn-white"><span class="fa fa-twitter"></span></a> <a href="#" class="btn btn-sm btn-icon btn-round btn-o btn-white"><span class="fa fa-google-plus"></span></a> <a href="#" class="btn btn-sm btn-icon btn-round btn-o btn-white"><span class="fa fa-linkedin"></span></a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="osLight footer-header">Subscribe to Our Newsletter</div>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="btn btn-green btn-block">Subscribe</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="copyright">Real estate web application<br> &copy; 2014</div>
+            </div>
+        </div>
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-touch-punch.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/jquery.visible.js"></script>
+        <script src="js/blog.js" type="text/javascript"></script>
+    </body>
+</html>

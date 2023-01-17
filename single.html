@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>reales | real estate web application</title>
+    <!-- <script defer src="js/all.js"></script> -->
+    <link href="css/all.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="notransition">
+
+    <!-- Header -->
+
+    <div id="header">
+    </div>
+
+    <!-- Left Side Navigation -->
+
+    <!-- <div id="leftSide"> -->
+
+    </div>
+    <div class="closeLeftSide"></div>
+
+    <!-- Content -->
+
+    <div id="wrapper">
+        <div id="mapView" class="mob-min">
+            <div class="mapPlaceholder"><span class="fa fa-spin fa-spinner"></span> Loading map...</div>
+        </div>
+        <div id="content" class="mob-max">
+            <div class="singleTop">
+                <div id="carouselFull" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" id="item-images-indicators">
+
+                    </ol>
+                    <div class="carousel-inner" id="item-images">
+
+                    </div>
+                    <a class="left carousel-control" href="#carouselFull" role="button" data-slide="prev"><span
+                            class="fa fa-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carouselFull" role="button" data-slide="next"><span
+                            class="fa fa-chevron-right"></span></a>
+                </div>
+
+                <div class="summary">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                            <div class="summaryItem">
+                                <h1 class="pageTitle" id="item-title"></h1>
+                                <div class="address">
+                                    <span class="icon-pointer"></span>
+                                    <span id="item-address"></span>
+                                </div>
+                                <div class="item-cost">
+                                    
+                                </div>
+                                <div class="property-type">
+                                    
+                                </div>
+                                <div class="commercial-view">
+
+                                </div>
+                                <div class="row">
+                                    <ul class="features">
+                                        <li><img src="images/hotel-bed-fill-svgrepo-com.svg" alt="image" class="bed" />
+                                            <div id="item-bedrooms">2 Bedrooms</div>
+                                        </li>
+                                        <li><img src="images/bath-svgrepo-com.svg" alt="image" class="bath" />
+                                            <div id="item-bathrooms">2 Bathrooms</div>
+                                        </li>
+                                        <li><img src="images/car-svgrepo-com.svg" alt="image" class="bed" />
+                                            <div id="item-cars">2 Cars</div>
+                                        </li>
+                                        <li><span class="icon-frame"></span>
+                                            <div id="item-area">2750 Sq Ft</div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="row info-view">
+                                    <div class="col-md-6  fp-link-div">
+                                        <span class=""><strong>Floorplan:</strong></span>
+                                        <a href="#" target='_blank' class="fp-link">View Floorplan</a>
+                                    </div>
+                                    <div class="col-md-6  video-link-div">
+                                        <span class=""><strong>Video:</strong></span>
+                                        <a class="video-link" target='_blank' href="#">Video Property Video</a>
+                                    </div>
+                                    <div class="col-md-12  st-link-div">
+                                        <span><strong>Statement Of Information:</strong></span>
+                                        <a href="#" target='_blank' class="st-link">View Statement Of Information</a>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="agentAvatar summaryItem">
+                                <div class="clearfix"></div>
+                                <a class="client-link" href="">
+                                    <img class="avatar agentAvatarImg" src="images/avatar-2.png" alt="avatar"
+                                        style="width:170px;">
+                                    <div class="agentName" id="agent-name">Jane Smith</div>
+                                    <div class="agentMobile">000</div>
+                                </a>
+                                <a data-toggle="modal" href="#contactAgent"
+                                    class="btn btn-md btn-round btn-green contactBtn" style="width:150px;">Contact
+                                    Agent</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="description">
+                <h3>Description</h3>
+                <p id="item-description"></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3><b>Open Times</b></h3>
+                    </div>
+                    <!-- <div class="col-md-8">
+                      <p style="color:red">(list times here as per current template for Nicolas Heath website)</p>
+                    </div> -->
+                </div>
+
+            </div>
+            <div class="share">
+                <h3>Share</h3>
+
+            </div>
+            <div class="share row">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 shareItem col-md-offset-1 col-lg-offset-1">
+                            <a href="#" class="btn btn-sm btn-round btn-email"><span class="fa fa-envelope"></span>
+                                Email</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 shareItem">
+                            <a href="#" class="btn btn-sm btn-round btn-facebook"><span class="fa fa-facebook"></span>
+                                Facebook</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 shareItem">
+                            <a href="#" class="btn btn-sm btn-round btn-twitter"><span class="fa fa-twitter"></span>
+                                Twitter</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 shareItem">
+                            <a href="#" class="btn btn-sm btn-round btn-google"><span class="fa fa-google-plus"></span>
+                                Google+</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 shareItem">
+                            <a href="#" class="btn btn-sm btn-round btn-pinterest"><span class="fa fa-pinterest"></span>
+                                Pinterest</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="text-center align-middle">
+                        <!-- <a data-toggle="modal" data-target="#modalAppraisal"
+                                    class="btn btn-md btn-round btn-green contactBtn" style="width:180px;">Apply Online</a> -->
+
+                        <a href="https://www.1form.com/au/tenant/application/returning/goto/L2F1L3RlbmFudC9kYXNoYm9hcmQvaW5kZXg%3D" target="_blank" class="btn btn-md btn-round btn-green contactBtn"
+                            style="width:180px;">Apply Online</a>
+                    </div>
+                </div>
+            </div>
+            <div class="amenities">
+                <h3>Features</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem"><span class="fa fa-car"></span> Garage</div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem"><span class="fa fa-tint"></span> Outdoor
+                        Pool</div>
+                    <!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem inactive"><span class="fa fa-leaf"></span>
+                        Garden</div> -->
+                    <!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem inactive"><span class="fa fa-shield"></span>
+                        Security System</div> -->
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem"><span class="fa fa-wifi"></span> Internet
+                    </div>
+                    <!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem inactive"><span class="fa fa-phone"></span>
+                        Telephone</div> -->
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem"><span class="fa fa-asterisk"></span> Air
+                        Conditioning</div>
+                    <!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem inactive"><span class="fa fa-sun-o"></span>
+                        Heating</div> -->
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem"><span class="fa fa-fire"></span> Fireplace
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem"><span class="fa fa-arrows-v"></span> Balcony
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 amItem"><span class="fa fa-desktop"></span> TV Cable
+                    </div>
+                </div>
+            </div>
+            <div class="similar">
+                <h3>Similar Properties</h3>
+                <!-- carousel for medium & large devices -->
+                <div id="carouselSimilar-3" class="carousel slide visible-lg carousel-col">
+                    <ol class="carousel-indicators">
+
+                    </ol>
+                    <div class="carousel-inner">
+
+                    </div>
+                    <a class="left carousel-control" href="#carouselSimilar-3" role="button" data-slide="prev"><span
+                            class="fa fa-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carouselSimilar-3" role="button" data-slide="next"><span
+                            class="fa fa-chevron-right"></span></a>
+                </div>
+
+                <!-- carousel for small devices -->
+                <div id="carouselSimilar-2" class="carousel slide visible-md carousel-col">
+                    <ol class="carousel-indicators">
+                    </ol>
+                    <div class="carousel-inner">
+                    </div>
+                    <a class="left carousel-control" href="#carouselSimilar-2" role="button" data-slide="prev"><span
+                            class="fa fa-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carouselSimilar-2" role="button" data-slide="next"><span
+                            class="fa fa-chevron-right"></span></a>
+                </div>
+
+                <!-- carousel for extra-small devices -->
+                <div id="carouselSimilar-1" class="carousel slide visible-xs visible-sm carousel-col">
+                    <ol class="carousel-indicators">
+
+                    </ol>
+                    <div class="carousel-inner">
+
+                    </div>
+                    <a class="left carousel-control" href="#carouselSimilar-1" role="button" data-slide="prev"><span
+                            class="fa fa-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carouselSimilar-1" role="button" data-slide="next"><span
+                            class="fa fa-chevron-right"></span></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="modal fade" id="contactAgent" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="contactLabel">Contact Agent</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="contactForm">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cfItem">
+                                <input type="text" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cfItem">
+                                <input type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cfItem">
+                                <input type="text" placeholder="Subject" class="form-control">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cfItem">
+                                <textarea placeholder="Message" rows="3" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn btn-round btn-o btn-gray">Close</a>
+                    <a href="#" class="btn btn-round btn-green">Send message</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-modal">
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-touch-punch.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/jquery.slimscroll.min.js"></script>
+        <script src="js/jquery.visible.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPXXSwRALf68R6e4hX493BiIipCxgUCHI&sensor=true&amp;libraries=geometry&amp;libraries=places"
+            type="text/javascript"></script>
+        <script src="js/infobox.js"></script>
+        <script src="js/jquery.tagsinput.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="js/header.js"></script>
+        <script src="js/single.js"></script>
+</body>
+
+</html>

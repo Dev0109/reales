@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Contact us</title>
+  <script defer src="js/all.js"></script>
+  <link href="css/all.css" rel="stylesheet" />
+  <link href="css/font-awesome.css" rel="stylesheet">
+
+  <link href="css/simple-line-icons.css" rel="stylesheet">
+  <link href="css/fullscreen-slider.css" rel="stylesheet">
+  <link href="css/jquery-ui.css" rel="stylesheet">
+  <link href="css/datepicker.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body class="no-hidden">
+  <div id="hero-container" style="height: 25vh;">
+    <ul class="cb-slideshow" style="height: 25vh;">
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+    </ul>
+    <div class="home-header nav">
+    </div>
+    <div class="home-caption">
+      <div class="home-title">Contact us</div>
+    </div>
+  </div>
+  <div class="contact-page">
+    <div class="row" style="width: 1120px;margin: 0 auto;">
+      <div class="col-md-6">
+
+        <h4 class="box-title">Contact info</h4>
+        <p class="first-paragraph">Let us help take away the stress of buying, selling, or rental journey.</p>
+        <p>Give us a call for a no obligation chat and some helpful advice regarding the sale of your property.</p>
+        <div class="info-wrapper">
+          <div class="contact-details"> <span><i class="fa fa-phone"></i> <a href="tel:1800 123 456"
+                style="color: #50b948">&nbsp;1800 123 456</a></span></div>
+          <div class="contact-details">
+            <span><i class="fa fa-envelope"></i> <a href="mailto:enquiries@ouragency.com.au?subject=Website Enquiry"
+                style="color: #50b948">&nbsp;enquiries@ouragency.com.au</a></span>
+          </div>
+          <div class="contact-details"> <span><i class="fa fa-home"></i>&nbsp;10 Main Street Melbourne VIC 3000</span>
+          </div>
+        </div>
+        <div class="clearfix">
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="inner-wrapper">
+          <h4 class="box-title">Get in touch</h4>
+          <form class="contact-form" method="POST" action="/form_mailer/submit">
+            <input type="hidden" name="authenticity_token" id="authenticity_token"
+              value="8JLo+5HZNF2IpBsZ1fuU8Cr/q79qesv2x3y9rpY6EXtqZP8aPxDOAalJNL2YahHoxgLVMotlAxB3VrlxWxzkPQ==">
+            <div class="contact-form-left">
+              <input type="text" name="name" placeholder="Name" id="name" value="" class="form-control" required=""
+                style="width: 95%;"><br>
+              <input type="text" name="email" placeholder="e-mail" id="email" class="form-control" value="" required=""
+                style="width: 95%;"><br>
+              <input type="text" name="phone" placeholder="phone number" id="phone" class="form-control" value=""
+                required="" style="width: 95%;"><br>
+              <input type="text" name="subject" class="form-control" placeholder="Subject" id="subject" value=""
+                style="width: 95%;"><br>
+              
+            </div>
+            <div class="contact-form-right">
+              <textarea id="content" name="content" class="form-control" style="width:100%;height:100px"
+                placeholder="Message"></textarea><br>
+              <br>
+              
+              
+              <input type="hidden" name="form_secrets"
+                value="eyJhbGciOiJIUzI1NiJ9.eyJmb3JtX3NlY3JldHMiOnsidXNlX2NhcHRjaGEiOiIxIiwiZGVzdGluYXRpb24iOiIvdGhhbmsteW91IiwiY29tbWVudHNfaW5mbyI6IkNvbW1lbnRzfm5ld2xpbmUiLCJjYXB0Y2hhX3NlY3JldF9hbnN3ZXIiOjEyLCJkaXNhYmxlX2xpbmtzX2luX2NvbW1lbnRzIjoxfSwiZXhwIjoxNjUyMzA1MjQyfQ.U2ztaLvWOqLvglNFFhvQaaZUyY8-r5wpZHx327m_OEg">
+              
+                <input type="submit" value="Send message" style="margin-top:80px" id="submit-btn" class="btn btn-green">
+            </div>
+          </form>
+          <div class="clearfix">
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="">
+      <iframe id="area-map" class="map-content" style="width:100%;height:400px;margin-bottom:-6px;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=149 Auburn Street, Goulburn NSW 2580" allowfullscreen="allowfullscreen"></iframe>
+      </section>
+  </div>
+  <div class="home-footer" style="margin-top: 100px;">
+
+  </div>
+  </div>
+  <div class="home-modal">
+  </div>
+
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery-ui-touch-punch.js"></script>
+  <script src="js/jquery.placeholder.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.touchSwipe.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPXXSwRALf68R6e4hX493BiIipCxgUCHI&sensor=true&amp;libraries=geometry&amp;libraries=places"
+    type="text/javascript"></script>
+  <script src="js/infobox.js"></script>
+  <script src="js/jquery.visible.js"></script>
+  <script src="js/home.js" type="text/javascript"></script>
+  <script src="bootstrap-chosen/chosen.jquery.js" type="text/javascript"></script>
+  <script src="js/header.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

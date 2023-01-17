@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>reales | real estate web application</title>
+        <script defer src="js/all.js"></script>
+        <link href="css/all.css" rel="stylesheet" />
+        <link href="css/font-awesome.css" rel="stylesheet">
+
+        <link href="css/simple-line-icons.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="notransition">
+
+        <!-- Header -->
+
+        <div id="header">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="fa fa-home marker"></span>
+                    <span class="logoText">reales</span>
+                </a>
+            </div>
+            <a href="#" class="navHandler"><span class="fa fa-bars"></span></a>
+            <div class="search">
+                <span class="searchIcon icon-magnifier"></span>
+                <input type="text" placeholder="Search for houses, apartments...">
+            </div>
+            <div class="headerUserWraper">
+                <a href="#" class="userHandler dropdown-toggle" data-toggle="dropdown"><span class="icon-user"></span><span class="counter">5</span></a>
+                <a href="#" class="headerUser dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar headerAvatar pull-left" src="images/avatar-1.png" alt="avatar">
+                    <div class="userTop pull-left">
+                        <span class="headerUserName">John Smith</span> <span class="fa fa-angle-down"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+                <div class="dropdown-menu pull-right userMenu" role="menu">
+                    <div class="mobAvatar">
+                        <img class="avatar mobAvatarImg" src="images/avatar-1.png" alt="avatar">
+                        <div class="mobAvatarName">John Smith</div>
+                    </div>
+                    <ul>
+                        <li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+                        <li><a href="profile.html"><span class="icon-user"></span>Profile</a></li>
+                        <li><a href="#"><span class="icon-bell"></span>Notifications <span class="badge pull-right bg-red">5</span></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon-power"></span>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="headerNotifyWraper">
+                <a href="#" class="headerNotify dropdown-toggle" data-toggle="dropdown">
+                    <span class="notifyIcon icon-bell"></span>
+                    <span class="counter">5</span>
+                </a>
+                <div class="dropdown-menu pull-right notifyMenu" role="menu">
+                    <div class="notifyHeader">
+                        <span>Notifications</span>
+                        <a href="#" class="notifySettings icon-settings"></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="notifyList">
+                        <li>
+                            <a href="#">
+                                <img class="avatar pull-left" src="images/avatar-1.png" alt="avatar">
+                                <div class="pulse border-grey"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">Sed ut perspiciatis unde</div>
+                                    <div class="notifyTime">5 minutes ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-red fa fa-envelope-o"></div>
+                                <div class="pulse border-red"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">Lorem Ipsum is simply dummy text</div>
+                                    <div class="notifyTime">20 minutes ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-yellow fa fa-heart-o"></div>
+                                <div class="pulse border-yellow"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">It is a long established fact</div>
+                                    <div class="notifyTime">2 hours ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-magenta fa fa-paper-plane-o"></div>
+                                <div class="pulse border-magenta"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">There are many variations</div>
+                                    <div class="notifyTime">1 day ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="notifyAll">See All</a>
+                </div>
+            </div>
+            <a href="#" class="mapHandler"><span class="icon-map"></span></a>
+            <div class="clearfix"></div>
+        </div>
+
+        <!-- Left Side Navigation -->
+
+        <div id="leftSide">
+            <nav class="leftNav scrollable">
+                <div class="search">
+                    <span class="searchIcon icon-magnifier"></span>
+                    <input type="text" placeholder="Search for houses, apartments...">
+                    <div class="clearfix"></div>
+                </div>
+                <ul>
+                    <li><a href="explore.html"><span class="navIcon icon-compass"></span><span class="navLabel">Explore</span></a></li>
+                    <li><a href="single.html"><span class="navIcon icon-home"></span><span class="navLabel">Single</span></a></li>
+                    <li><a href="add.html"><span class="navIcon icon-plus"></span><span class="navLabel">New</span></a></li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-drop"></span><span class="navLabel">Colors</span><span class="fa fa-angle-left arrowRight"></span><span class="badge bg-yellow">5</span></a>
+                        <ul class="colors">
+                            <li><a href="#">Red <span class="fa fa-circle-o c-red icon-right"></span></a></li>
+                            <li><a href="#">Green <span class="fa fa-circle-o c-green icon-right"></span></a></li>
+                            <li><a href="#">Blue <span class="fa fa-circle-o c-blue icon-right"></span></a></li>
+                            <li><a href="#">Yellow <span class="fa fa-circle-o c-yellow icon-right"></span></a></li>
+                            <li><a href="#">Magenta <span class="fa fa-circle-o c-magenta icon-right"></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-layers"></span><span class="navLabel">Elements</span><span class="fa fa-angle-left arrowRight"></span></a>
+                        <ul>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="icons.html">Icons <span class="badge pull-right bg-yellow">841</span></a></li>
+                            <li><a href="grid.html">Grid</a></li>
+                            <li><a href="widgets.html">Widgets</a></li>
+                            <li><a href="components.html">Components</a></li>
+                            <li><a href="lists.html">Lists</a></li>
+                            <li><a href="tables.html">Tables</a></li>
+                            <li><a href="form.html">Form</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-link"></span><span class="navLabel">Pages</span><span class="fa fa-angle-left arrowRight"></span></a>
+                        <ul>
+                            <li><a href="signin.html">Sign In</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="index.html">Homepage Slideshow</a></li>
+                            <li><a href="index-map.html">Homepage Map</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="leftUserWraper dropup">
+                <a href="#" class="avatarAction dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar" src="images/avatar-1.png" alt="avatar"><span class="counter">5</span>
+                    <div class="userBottom pull-left">
+                        <span class="bottomUserName">John Smith</span> <span class="fa fa-angle-up pull-right arrowUp"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+                    <li><a href="profile.html"><span class="icon-user"></span>Profile</a></li>
+                    <li><a href="#"><span class="icon-bell"></span>Notifications <span class="badge pull-right bg-red">5</span></a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><span class="icon-power"></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="closeLeftSide"></div>
+
+        <!-- Content -->
+
+        <div id="wrapper" class="full">
+            <div id="mapView" class="min"><div class="mapPlaceholder"><span class="fa fa-spin fa-spinner"></span> Loading map...</div></div>
+            <div id="content" class="max">
+                <div class="whiteBg">
+                    <h4 class="text-green">Simple Line Icons (162)</h4>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-user"></span> icon-user</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-user-female"></span> icon-user-female</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-users"></span> icon-users</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-user-follow"></span> icon-user-follow</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-user-following"></span> icon-user-following</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-user-unfollow"></span> icon-user-unfollow</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-trophy"></span> icon-trophy</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-speedometer"></span> icon-speedometer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-social-youtube"></span> icon-social-youtube</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-social-twitter"></span> icon-social-twitter</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-social-tumblr"></span> icon-social-tumblr</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-social-facebook"></span> icon-social-facebook</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-social-dropbox"></span> icon-social-dropbox</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-social-dribbble"></span> icon-social-dribbble</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-shield"></span> icon-shield</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-screen-tablet"></span> icon-screen-tablet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-screen-smartphone"></span> icon-screen-smartphone</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-screen-desktop"></span> icon-screen-desktop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-plane"></span> icon-plane</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-notebook"></span> icon-notebook</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-moustache"></span> icon-moustache</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-mouse"></span> icon-mouse</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-magnet"></span> icon-magnet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-magic-wand"></span> icon-magic-wand</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-hourglass"></span> icon-hourglass</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-graduation"></span> icon-graduation</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-ghost"></span> icon-ghost</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-game-controller"></span> icon-game-controller</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-fire"></span> icon-fire</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-eyeglasses"></span> icon-eyeglasses</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-envelope-open"></span> icon-envelope-open</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-envelope-letter"></span> icon-envelope-letter</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-energy"></span> icon-energy</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-emoticon-smile"></span> icon-emoticon-smile</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-disc"></span> icon-disc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-cursor-move"></span> icon-cursor-move</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-crop"></span> icon-crop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-credit-card"></span> icon-credit-card</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-chemistry"></span> icon-chemistry</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-bell"></span> icon-bell</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-badge"></span> icon-badge</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-anchor"></span> icon-anchor</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-action-redo"></span> icon-action-redo</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-action-undo"></span> icon-action-undo</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-bag"></span> icon-bag</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-basket"></span> icon-basket</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-basket-loaded"></span> icon-basket-loaded</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-book-open"></span> icon-book-open</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-briefcase"></span> icon-briefcase</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-bubbles"></span> icon-bubbles</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-calculator"></span> icon-calculator</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-call-end"></span> icon-call-end</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-call-in"></span> icon-call-in</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-call-out"></span> icon-call-out</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-compass"></span> icon-compass</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-cup"></span> icon-cup</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-diamond"></span> icon-diamond</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-direction"></span> icon-direction</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-directions"></span> icon-directions</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-docs"></span> icon-docs</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-drawer"></span> icon-drawer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-drop"></span> icon-drop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-earphones"></span> icon-earphones</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-earphones-alt"></span> icon-earphones-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-feed"></span> icon-feed</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-film"></span> icon-film</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-folder-alt"></span> icon-folder-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-frame"></span> icon-frame</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-globe"></span> icon-globe</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-globe-alt"></span> icon-globe-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-handbag"></span> icon-handbag</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-layers"></span> icon-layers</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-map"></span> icon-map</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-picture"></span> icon-picture</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-pin"></span> icon-pin</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-playlist"></span> icon-playlist</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-present"></span> icon-present</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-printer"></span> icon-printer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-puzzle"></span> icon-puzzle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-speech"></span> icon-speech</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-vector"></span> icon-vector</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-wallet"></span> icon-wallet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-arrow-down"></span> icon-arrow-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-arrow-left"></span> icon-arrow-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-arrow-right"></span> icon-arrow-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-arrow-up"></span> icon-arrow-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-bar-chart"></span> icon-bar-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-bulb"></span> icon-bulb</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-calendar"></span> icon-calendar</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-control-end"></span> icon-control-end</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-control-forward"></span> icon-control-forward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-control-pause"></span> icon-control-pause</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-control-play"></span> icon-control-play</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-control-rewind"></span> icon-control-rewind</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-control-start"></span> icon-control-start</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-cursor"></span> icon-cursor</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-dislike"></span> icon-dislike</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-equalizer"></span> icon-equalizer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-graph"></span> icon-graph</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-grid"></span> icon-grid</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-home"></span> icon-home</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-like"></span> icon-like</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-list"></span> icon-list</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-login"></span> icon-login</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-logout"></span> icon-logout</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-loop"></span> icon-loop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-microphone"></span> icon-microphone</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-music-tone"></span> icon-music-tone</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-music-tone-alt"></span> icon-music-tone-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-note"></span> icon-note</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-pencil"></span> icon-pencil</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-pie-chart"></span> icon-pie-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-question"></span> icon-question</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-rocket"></span> icon-rocket</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-share"></span> icon-share</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-share-alt"></span> icon-share-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-shuffle"></span> icon-shuffle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-size-actual"></span> icon-size-actual</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-size-fullscreen"></span> icon-size-fullscreen</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-support"></span> icon-support</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-tag"></span> icon-tag</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-trash"></span> icon-trash</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-umbrella"></span> icon-umbrella</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-wrench"></span> icon-wrench</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-ban"></span> icon-ban</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-bubble"></span> icon-bubble</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-camcorder"></span> icon-camcorder</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-camera"></span> icon-camera</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-check"></span> icon-check</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-clock"></span> icon-clock</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-close"></span> icon-close</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-cloud-download"></span> icon-cloud-download</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-cloud-upload"></span> icon-cloud-upload</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-doc"></span> icon-doc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-envelope"></span> icon-envelope</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-eye"></span> icon-eye</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-flag"></span> icon-flag</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-folder"></span> icon-folder</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-heart"></span> icon-heart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-info"></span> icon-info</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-key"></span> icon-key</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-link"></span> icon-link</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-lock"></span> icon-lock</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-lock-open"></span> icon-lock-open</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-magnifier"></span> icon-magnifier</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-magnifier-add"></span> icon-magnifier-add</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-magnifier-remove"></span> icon-magnifier-remove</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-paper-clip"></span> icon-paper-clip</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-paper-plane"></span> icon-paper-plane</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-plus"></span> icon-plus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-pointer"></span> icon-pointer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-power"></span> icon-power</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-refresh"></span> icon-refresh</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-reload"></span> icon-reload</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-settings"></span> icon-settings</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-star"></span> icon-star</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-symbol-female"></span> icon-symbol-female</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-symbol-male"></span> icon-symbol-male</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-target"></span> icon-target</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-volume-1"></span> icon-volume-1</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-volume-2"></span> icon-volume-2</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="icon-volume-off"></span> icon-volume-off</div>
+                    </div>
+                    <h4 class="text-green">Font Awesome Icons 4.2.0 (479)</h4>
+                    <h5>Web Application Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-adjust"></span> fa-adjust</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-anchor"></span> fa-anchor</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-archive"></span> fa-archive</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-area-chart"></span> fa-area-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrows"></span> fa-arrows</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrows-h"></span> fa-arrows-h</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrows-v"></span> fa-arrows-v</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-asterisk"></span> fa-asterisk</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-at"></span> fa-at</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-automobile"></span> fa-automobile</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ban"></span> fa-ban</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bank"></span> fa-bank</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bar-chart"></span> fa-bar-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bar-chart-o"></span> fa-bar-chart-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-barcode"></span> fa-barcode</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bars"></span> fa-bars</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-beer"></span> fa-beer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bell"></span> fa-bell</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bell-o"></span> fa-bell-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bell-slash"></span> fa-bell-slash</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bell-slash-o"></span> fa-bell-slash-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bicycle"></span> fa-bicycle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-binoculars"></span> fa-binoculars</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-birthday-cake"></span> fa-birthday-cake</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bolt"></span> fa-bolt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bomb"></span> fa-bomb</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-book"></span> fa-book</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bookmark"></span> fa-bookmark</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bookmark-o"></span> fa-bookmark-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-briefcase"></span> fa-briefcase</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bug"></span> fa-bug</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-building"></span> fa-building</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-building-o"></span> fa-building-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bullhorn"></span> fa-bullhorn</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bullseye"></span> fa-bullseye</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bus"></span> fa-bus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cab"></span> fa-cab</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-calculator"></span> fa-calculator</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-calendar"></span> fa-calendar</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-calendar-o"></span> fa-calendar-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-camera"></span> fa-camera</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-camera-retro"></span> fa-camera-retro</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-car"></span> fa-car</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bed"></span> fa-bed</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bath"></span> fa-bath</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-square-o-down"></span> fa-caret-square-o-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-square-o-left"></span> fa-caret-square-o-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-square-o-right"></span> fa-caret-square-o-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-square-o-up"></span> fa-caret-square-o-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc"></span> fa-cc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-certificate"></span> fa-certificate</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-check"></span> fa-check</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-check-circle"></span> fa-check-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-check-circle-o"></span> fa-check-circle-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-check-square"></span> fa-check-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-check-square-o"></span> fa-check-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-child"></span> fa-child</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-circle"></span> fa-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-circle-o"></span> fa-circle-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-circle-o-notch"></span> fa-circle-o-notch</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-circle-thin"></span> fa-circle-thin</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-clock-o"></span> fa-clock-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-close"></span> fa-close</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cloud"></span> fa-cloud</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cloud-download"></span> fa-cloud-download</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cloud-upload"></span> fa-cloud-upload</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-code"></span> fa-code</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-code-fork"></span> fa-code-fork</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-coffee"></span> fa-coffee</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cog"></span> fa-cog</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cogs"></span> fa-cogs</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-comment"></span> fa-comment</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-comment-o"></span> fa-comment-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-comments"></span> fa-comments</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-comments-o"></span> fa-comments-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-compass"></span> fa-compass</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-copyright"></span> fa-copyright</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-credit-card"></span> fa-credit-card</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-crop"></span> fa-crop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-crosshairs"></span> fa-crosshairs</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cube"></span> fa-cube</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cubes"></span> fa-cubes</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cutlery"></span> fa-cutlery</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-dashboard"></span> fa-dashboard</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-database"></span> fa-database</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-desktop"></span> fa-desktop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-dot-circle-o"></span> fa-dot-circle-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-download"></span> fa-download</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-edit"></span> fa-edit</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ellipsis-h"></span> fa-ellipsis-h</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ellipsis-v"></span> fa-ellipsis-v</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-envelope"></span> fa-envelope</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-envelope-o"></span> fa-envelope-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-envelope-square"></span> fa-envelope-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-eraser"></span> fa-eraser</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-exchange"></span> fa-exchange</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-exclamation"></span> fa-exclamation</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-exclamation-circle"></span> fa-exclamation-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-exclamation-triangle"></span> fa-exclamation-triangle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-external-link"></span> fa-external-link</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-external-link-square"></span> fa-external-link-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-eye"></span> fa-eye</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-eye-slash"></span> fa-eye-slash</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-eyedropper"></span> fa-eyedropper</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-fax"></span> fa-fax</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-female"></span> fa-female</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-fighter-jet"></span> fa-fighter-jet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-archive-o"></span> fa-file-archive-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-audio-o"></span> fa-file-audio-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-code-o"></span> fa-file-code-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-excel-o"></span> fa-file-excel-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-image-o"></span> fa-file-image-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-movie-o"></span> fa-file-movie-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-pdf-o"></span> fa-file-pdf-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-photo-o"></span> fa-file-photo-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-picture-o"></span> fa-file-picture-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-powerpoint-o"></span> fa-file-powerpoint-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-sound-o"></span> fa-file-sound-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-video-o"></span> fa-file-video-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-word-o"></span> fa-file-word-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-zip-o"></span> fa-file-zip-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-film"></span> fa-film</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-filter"></span> fa-filter</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-fire"></span> fa-fire</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-fire-extinguisher"></span> fa-fire-extinguisher</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-flag"></span> fa-flag</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-flag-checkered"></span> fa-flag-checkered</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-flag-o"></span> fa-flag-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-flash"></span> fa-flash</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-flask"></span> fa-flask</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-folder"></span> fa-folder</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-folder-o"></span> fa-folder-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-folder-open"></span> fa-folder-open</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-folder-open-o"></span> fa-folder-open-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-frown-o"></span> fa-frown-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-futbol-o"></span> fa-futbol-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-gamepad"></span> fa-gamepad</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-gavel"></span> fa-gavel</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-gear"></span> fa-gear</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-gears"></span> fa-gears</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-gift"></span> fa-gift</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-glass"></span> fa-glass</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-globe"></span> fa-globe</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-graduation-cap"></span> fa-graduation-cap</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-group"></span> fa-group</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-hdd-o"></span> fa-hdd-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-headphones"></span> fa-headphones</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-heart"></span> fa-heart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-heart-o"></span> fa-heart-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-history"></span> fa-history</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-home"></span> fa-home</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-image"></span> fa-image</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-inbox"></span> fa-inbox</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-info"></span> fa-info</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-info-circle"></span> fa-info-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-institution"></span> fa-institution</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-key"></span> fa-key</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-keyboard-o"></span> fa-keyboard-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-language"></span> fa-language</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-laptop"></span> fa-laptop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-leaf"></span> fa-leaf</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-legal"></span> fa-legal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-lemon-o"></span> fa-lemon-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-level-down"></span> fa-level-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-level-up"></span> fa-level-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-life-bouy"></span> fa-life-bouy</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-life-buoy"></span> fa-life-buoy</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-life-ring"></span> fa-life-ring</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-life-saver"></span> fa-life-saver</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-lightbulb-o"></span> fa-lightbulb-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-line-chart"></span> fa-line-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-location-arrow"></span> fa-location-arrow</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-lock"></span> fa-lock</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-magic"></span> fa-magic</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-magnet"></span> fa-magnet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-mail-forward"></span> fa-mail-forward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-mail-reply"></span> fa-mail-reply</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-mail-reply-all"></span> fa-mail-reply-all</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-male"></span> fa-male</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-map-marker"></span> fa-map-marker</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-meh-o"></span> fa-meh-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-microphone"></span> fa-microphone</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-microphone-slash"></span> fa-microphone-slash</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-minus"></span> fa-minus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-minus-circle"></span> fa-minus-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-minus-square"></span> fa-minus-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-minus-square-o"></span> fa-minus-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-mobile"></span> fa-mobile</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-mobile-phone"></span> fa-mobile-phone</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-money"></span> fa-money</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-moon-o"></span> fa-moon-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-mortar-board"></span> fa-mortar-board</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-music"></span> fa-music</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-navicon"></span> fa-navicon</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-newspaper-o"></span> fa-newspaper-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paint-brush"></span> fa-paint-brush</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paper-plane"></span> fa-paper-plane</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paper-plane-o"></span> fa-paper-plane-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paw"></span> fa-paw</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pencil"></span> fa-pencil</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pencil-square"></span> fa-pencil-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pencil-square-o"></span> fa-pencil-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-phone"></span> fa-phone</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-phone-square"></span> fa-phone-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-photo"></span> fa-photo</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-picture-o"></span> fa-picture-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pie-chart"></span> fa-pie-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plane"></span> fa-plane</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plug"></span> fa-plug</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plus"></span> fa-plus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plus-circle"></span> fa-plus-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plus-square"></span> fa-plus-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plus-square-o"></span> fa-plus-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-power-off"></span> fa-power-off</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-print"></span> fa-print</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-puzzle-piece"></span> fa-puzzle-piece</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-qrcode"></span> fa-qrcode</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-question"></span> fa-question</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-question-circle"></span> fa-question-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-quote-left"></span> fa-quote-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-quote-right"></span> fa-quote-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-random"></span> fa-random</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-recycle"></span> fa-recycle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-refresh"></span> fa-refresh</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-remove"></span> fa-remove</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-reorder"></span> fa-reorder</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-reply"></span> fa-reply</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-reply-all"></span> fa-reply-all</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-retweet"></span> fa-retweet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-road"></span> fa-road</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rocket"></span> fa-rocket</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rss"></span> fa-rss</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rss-square"></span> fa-rss-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-search"></span> fa-search</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-search-minus"></span> fa-search-minus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-search-plus"></span> fa-search-plus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-send"></span> fa-send</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-send-o"></span> fa-send-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-share"></span> fa-share</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-share-alt"></span> fa-share-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-share-alt-square"></span> fa-share-alt-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-share-square"></span> fa-share-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-share-square-o"></span> fa-share-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-shield"></span> fa-shield</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-shopping-cart"></span> fa-shopping-cart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sign-in"></span> fa-sign-in</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sign-out"></span> fa-sign-out</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-signal"></span> fa-signal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sitemap"></span> fa-sitemap</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sliders"></span> fa-sliders</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-smile-o"></span> fa-smile-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-soccer-ball-o"></span> fa-soccer-ball-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort"></span> fa-sort</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-alpha-asc"></span> fa-sort-alpha-asc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-alpha-desc"></span> fa-sort-alpha-desc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-amount-asc"></span> fa-sort-amount-asc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-amount-desc"></span> fa-sort-amount-desc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-asc"></span> fa-sort-asc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-desc"></span> fa-sort-desc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-down"></span> fa-sort-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-numeric-asc"></span> fa-sort-numeric-asc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-numeric-desc"></span> fa-sort-numeric-desc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sort-up"></span> fa-sort-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-space-shuttle"></span> fa-space-shuttle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-spinner"></span> fa-spinner</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-spoon"></span> fa-spoon</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-square"></span> fa-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-square-o"></span> fa-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-star"></span> fa-star</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-star-half"></span> fa-star-half</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-star-half-empty"></span> fa-star-half-empty</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-star-half-full"></span> fa-star-half-full</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-star-half-o"></span> fa-star-half-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-star-o"></span> fa-star-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-suitcase"></span> fa-suitcase</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sun-o"></span> fa-sun-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-support"></span> fa-support</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tablet"></span> fa-tablet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tachometer"></span> fa-tachometer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tag"></span> fa-tag</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tags"></span> fa-tags</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tasks"></span> fa-tasks</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-taxi"></span> fa-taxi</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-terminal"></span> fa-terminal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-thumb-tack"></span> fa-thumb-tack</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-thumbs-down"></span> fa-thumbs-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-thumbs-o-down"></span> fa-thumbs-o-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-thumbs-o-up"></span> fa-thumbs-o-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-thumbs-up"></span> fa-thumbs-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ticket"></span> fa-ticket</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-times"></span> fa-times</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-times-circle"></span> fa-times-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-times-circle-o"></span> fa-times-circle-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tint"></span> fa-tint</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-down"></span> fa-toggle-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-left"></span> fa-toggle-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-off"></span> fa-toggle-off</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-on"></span> fa-toggle-on</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-right"></span> fa-toggle-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-up"></span> fa-toggle-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-trash"></span> fa-trash</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-trash-o"></span> fa-trash-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tree"></span> fa-tree</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-trophy"></span> fa-trophy</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-truck"></span> fa-truck</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tty"></span> fa-tty</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-umbrella"></span> fa-umbrella</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-university"></span> fa-university</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-unlock"></span> fa-unlock</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-unlock-alt"></span> fa-unlock-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-unsorted"></span> fa-unsorted</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-upload"></span> fa-upload</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-user"></span> fa-user</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-users"></span> fa-users</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-video-camera"></span> fa-video-camera</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-volume-down"></span> fa-volume-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-volume-off"></span> fa-volume-off</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-volume-up"></span> fa-volume-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-warning"></span> fa-warning</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-wheelchair"></span> fa-wheelchair</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-wifi"></span> fa-wifi</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-wrench"></span> fa-wrench</div>
+                    </div>
+                    <h5>File Type Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file"></span> fa-file</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-archive-o"></span> fa-file-archive-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-audio-o"></span> fa-file-audio-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-code-o"></span> fa-file-code-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-excel-o"></span> fa-file-excel-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-image-o"></span> fa-file-image-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-movie-o"></span> fa-file-movie-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-o"></span> fa-file-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-pdf-o"></span> fa-file-pdf-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-photo-o"></span> fa-file-photo-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-picture-o"></span> fa-file-picture-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-powerpoint-o"></span> fa-file-powerpoint-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-sound-o"></span> fa-file-sound-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-text"></span> fa-file-text</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-text-o"></span> fa-file-text-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-video-o"></span> fa-file-video-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-word-o"></span> fa-file-word-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-zip-o"></span> fa-file-zip-o</div>
+                    </div>
+                    <h5>Spinner Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-spin fa-circle-o-notch"></span> fa-circle-o-notch</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-spin fa-cog"></span> fa-cog</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-spin fa-gear"></span> fa-gear</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-spin fa-refresh"></span> fa-refresh</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-spin fa-spinner"></span> fa-spinner</div>
+                    </div>
+                    <h5>Form Control Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-check-square"></span> fa-check-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-check-square-o"></span> fa-check-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-circle"></span> fa-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-circle-o"></span> fa-circle-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-dot-circle-o"></span> fa-dot-circle-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-minus-square"></span> fa-minus-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-minus-square-o"></span> fa-minus-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plus-square"></span> fa-plus-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plus-square-o"></span> fa-plus-square-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-square"></span> fa-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-square-o"></span> fa-square-o</div>
+                    </div>
+                    <h5>Payment Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-amex"></span> fa-cc-amex</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-discover"></span> fa-cc-discover</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-mastercard"></span> fa-cc-mastercard</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-paypal"></span> fa-cc-paypal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-stripe"></span> fa-cc-stripe</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-visa"></span> fa-cc-visa</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-credit-card"></span> fa-credit-card</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-google-wallet"></span> fa-google-wallet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paypal"></span> fa-paypal</div>
+                    </div>
+                    <h5>Chart Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-area-chart"></span> fa-area-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bar-chart"></span> fa-bar-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bar-chart-o"></span> fa-bar-chart-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-line-chart"></span> fa-line-chart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pie-chart"></span> fa-pie-chart</div>
+                    </div>
+                    <h5>Currency Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bitcoin"></span> fa-bitcoin</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-btc"></span> fa-btc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cny"></span> fa-cny</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-dollar"></span> fa-dollar</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-eur"></span> fa-eur</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-euro"></span> fa-euro</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-gbp"></span> fa-gbp</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ils"></span> fa-ils</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-inr"></span> fa-inr</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-jpy"></span> fa-jpy</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-krw"></span> fa-krw</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-money"></span> fa-money</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rmb"></span> fa-rmb</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rouble"></span> fa-rouble</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rub"></span> fa-rub</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ruble"></span> fa-ruble</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rupee"></span> fa-rupee</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-shekel"></span> fa-shekel</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-sheqel"></span> fa-sheqel</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-try"></span> fa-try</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-turkish-lira"></span> fa-turkish-lira</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-usd"></span> fa-usd</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-won"></span> fa-won</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-yen"></span> fa-yen</div>
+                    </div>
+                    <h5>Text Editor Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-align-center"></span> fa-align-center</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-align-justify"></span> fa-align-justify</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-align-left"></span> fa-align-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-align-right"></span> fa-align-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bold"></span> fa-bold</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chain"></span> fa-chain</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chain-broken"></span> fa-chain-broken</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-clipboard"></span> fa-clipboard</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-columns"></span> fa-columns</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-copy"></span> fa-copy</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cut"></span> fa-cut</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-dedent"></span> fa-dedent</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-eraser"></span> fa-eraser</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file"></span> fa-file</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-o"></span> fa-file-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-text"></span> fa-file-text</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-file-text-o"></span> fa-file-text-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-files-o"></span> fa-files-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-floppy-o"></span> fa-floppy-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-font"></span> fa-font</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-header"></span> fa-header</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-indent"></span> fa-indent</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-italic"></span> fa-italic</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-link"></span> fa-link</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-list"></span> fa-list</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-list-alt"></span> fa-list-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-list-ol"></span> fa-list-ol</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-list-ul"></span> fa-list-ul</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-outdent"></span> fa-outdent</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paperclip"></span> fa-paperclip</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paragraph"></span> fa-paragraph</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paste"></span> fa-paste</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-repeat"></span> fa-repeat</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rotate-left"></span> fa-rotate-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rotate-right"></span> fa-rotate-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-save"></span> fa-save</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-scissors"></span> fa-scissors</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-strikethrough"></span> fa-strikethrough</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-subscript"></span> fa-subscript</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-superscript"></span> fa-superscript</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-table"></span> fa-table</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-text-height"></span> fa-text-height</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-text-width"></span> fa-text-width</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-th"></span> fa-th</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-th-large"></span> fa-th-large</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-th-list"></span> fa-th-list</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-underline"></span> fa-underline</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-undo"></span> fa-undo</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-unlink"></span> fa-unlink</div>
+                    </div>
+                    <h5>Directional Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angle-double-down"></span> fa-angle-double-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angle-double-left"></span> fa-angle-double-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angle-double-right"></span> fa-angle-double-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angle-double-up"></span> fa-angle-double-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angle-down"></span> fa-angle-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angle-left"></span> fa-angle-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angle-right"></span> fa-angle-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angle-up"></span> fa-angle-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-circle-down"></span> fa-arrow-circle-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-circle-left"></span> fa-arrow-circle-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-circle-o-down"></span> fa-arrow-circle-o-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-circle-o-left"></span> fa-arrow-circle-o-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-circle-o-right"></span> fa-arrow-circle-o-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-circle-o-up"></span> fa-arrow-circle-o-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-circle-right"></span> fa-arrow-circle-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-circle-up"></span> fa-arrow-circle-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-down"></span> fa-arrow-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-left"></span> fa-arrow-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-right"></span> fa-arrow-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrow-up"></span> fa-arrow-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrows"></span> fa-arrows</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrows-alt"></span> fa-arrows-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrows-h"></span> fa-arrows-h</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrows-v"></span> fa-arrows-v</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-down"></span> fa-caret-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-left"></span> fa-caret-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-right"></span> fa-caret-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-square-o-down"></span> fa-caret-square-o-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-square-o-left"></span> fa-caret-square-o-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-square-o-right"></span> fa-caret-square-o-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-square-o-up"></span> fa-caret-square-o-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-caret-up"></span> fa-caret-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chevron-circle-down"></span> fa-chevron-circle-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chevron-circle-left"></span> fa-chevron-circle-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chevron-circle-right"></span> fa-chevron-circle-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chevron-circle-up"></span> fa-chevron-circle-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chevron-down"></span> fa-chevron-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chevron-left"></span> fa-chevron-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chevron-right"></span> fa-chevron-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-chevron-up"></span> fa-chevron-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-hand-o-down"></span> fa-hand-o-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-hand-o-left"></span> fa-hand-o-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-hand-o-right"></span> fa-hand-o-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-hand-o-up"></span> fa-hand-o-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-long-arrow-down"></span> fa-long-arrow-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-long-arrow-left"></span> fa-long-arrow-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-long-arrow-right"></span> fa-long-arrow-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-long-arrow-up"></span> fa-long-arrow-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-down"></span> fa-toggle-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-left"></span> fa-toggle-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-right"></span> fa-toggle-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-toggle-up"></span> fa-toggle-up</div>
+                    </div>
+                    <h5>Video Player Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-arrows-alt"></span> fa-arrows-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-backward"></span> fa-backward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-compress"></span> fa-compress</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-eject"></span> fa-eject</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-expand"></span> fa-expand</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-fast-backward"></span> fa-fast-backward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-fast-forward"></span> fa-fast-forward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-forward"></span> fa-forward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pause"></span> fa-pause</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-play"></span> fa-play</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-play-circle"></span> fa-play-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-play-circle-o"></span> fa-play-circle-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-step-backward"></span> fa-step-backward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-step-forward"></span> fa-step-forward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-stop"></span> fa-stop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-youtube-play"></span> fa-youtube-play</div>
+                    </div>
+                    <h5>Brand Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-adn"></span> fa-adn</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-android"></span> fa-android</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-angellist"></span> fa-angellist</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-apple"></span> fa-apple</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-behance"></span> fa-behance</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-behance-square"></span> fa-behance-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bitbucket"></span> fa-bitbucket</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bitbucket-square"></span> fa-bitbucket-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-bitcoin"></span> fa-bitcoin</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-btc"></span> fa-btc</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-amex"></span> fa-cc-amex</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-discover"></span> fa-cc-discover</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-mastercard"></span> fa-cc-mastercard</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-paypal"></span> fa-cc-paypal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-stripe"></span> fa-cc-stripe</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-cc-visa"></span> fa-cc-visa</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-codepen"></span> fa-codepen</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-css3"></span> fa-css3</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-delicious"></span> fa-delicious</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-deviantart"></span> fa-deviantart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-digg"></span> fa-digg</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-dribbble"></span> fa-dribbble</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-dropbox"></span> fa-dropbox</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-drupal"></span> fa-drupal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-empire"></span> fa-empire</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-facebook"></span> fa-facebook</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-facebook-square"></span> fa-facebook-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-flickr"></span> fa-flickr</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-foursquare"></span> fa-foursquare</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ge"></span> fa-ge</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-git"></span> fa-git</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-git-square"></span> fa-git-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-github"></span> fa-github</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-github-alt"></span> fa-github-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-github-square"></span> fa-github-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-gittip"></span> fa-gittip</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-google"></span> fa-google</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-google-plus"></span> fa-google-plus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-google-plus-square"></span> fa-google-plus-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-google-wallet"></span> fa-google-wallet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-hacker-news"></span> fa-hacker-news</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-html5"></span> fa-html5</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-instagram"></span> fa-instagram</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ioxhost"></span> fa-ioxhost</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-joomla"></span> fa-joomla</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-jsfiddle"></span> fa-jsfiddle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-lastfm"></span> fa-lastfm</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-lastfm-square"></span> fa-lastfm-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-linkedin"></span> fa-linkedin</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-linkedin-square"></span> fa-linkedin-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-linux"></span> fa-linux</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-maxcdn"></span> fa-maxcdn</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-meanpath"></span> fa-meanpath</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-openid"></span> fa-openid</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pagelines"></span> fa-pagelines</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-paypal"></span> fa-paypal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pied-piper"></span> fa-pied-piper</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pied-piper-alt"></span> fa-pied-piper-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pinterest"></span> fa-pinterest</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-pinterest-square"></span> fa-pinterest-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-qq"></span> fa-qq</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ra"></span> fa-ra</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-rebel"></span> fa-rebel</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-reddit"></span> fa-reddit</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-reddit-square"></span> fa-reddit-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-renren"></span> fa-renren</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-share-alt"></span> fa-share-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-share-alt-square"></span> fa-share-alt-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-skype"></span> fa-skype</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-slack"></span> fa-slack</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-slideshare"></span> fa-slideshare</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-soundcloud"></span> fa-soundcloud</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-spotify"></span> fa-spotify</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-stack-exchange"></span> fa-stack-exchange</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-stack-overflow"></span> fa-stack-overflow</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-steam"></span> fa-steam</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-steam-square"></span> fa-steam-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-stumbleupon"></span> fa-stumbleupon</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-stumbleupon-circle"></span> fa-stumbleupon-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tencent-weibo"></span> fa-tencent-weibo</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-trello"></span> fa-trello</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tumblr"></span> fa-tumblr</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-tumblr-square"></span> fa-tumblr-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-twitch"></span> fa-twitch</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-twitter"></span> fa-twitter</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-twitter-square"></span> fa-twitter-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-vimeo-square"></span> fa-vimeo-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-vine"></span> fa-vine</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-vk"></span> fa-vk</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-wechat"></span> fa-wechat</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-weibo"></span> fa-weibo</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-weixin"></span> fa-weixin</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-windows"></span> fa-windows</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-wordpress"></span> fa-wordpress</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-xing"></span> fa-xing</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-xing-square"></span> fa-xing-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-yahoo"></span> fa-yahoo</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-yelp"></span> fa-yelp</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-youtube"></span> fa-youtube</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-youtube-play"></span> fa-youtube-play</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-youtube-square"></span> fa-youtube-square</div>
+                    </div>
+                    <h5>Medical Icons</h5>
+                    <div class="row icons pb20">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-ambulance"></span> fa-ambulance</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-h-square"></span> fa-h-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-hospital-o"></span> fa-hospital-o</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-medkit"></span> fa-medkit</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-plus-square"></span> fa-plus-square</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-stethoscope"></span> fa-stethoscope</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-user-md"></span> fa-user-md</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="fa fa-wheelchair"></span> fa-wheelchair</div>
+                    </div>
+                    <h4 class="text-green">Bootstrap 3 Glyphicons (200)</h4>
+                    <div class="row icons">
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-asterisk"></span> glyphicon-asterisk</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-plus"></span> glyphicon-plus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-euro"></span> glyphicon-euro</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-minus"></span> glyphicon-minus</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-cloud"></span> glyphicon-cloud</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-envelope"></span> glyphicon-envelope</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-pencil"></span> glyphicon-pencil</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-glass"></span> glyphicon-glass</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-music"></span> glyphicon-music</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-search"></span> glyphicon-search</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-heart"></span> glyphicon-heart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-star"></span> glyphicon-star</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-star-empty"></span> glyphicon-star-empty</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-user"></span> glyphicon-user</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-film"></span> glyphicon-film</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-th-large"></span> glyphicon-th-large</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-th"></span> glyphicon-th</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-th-list"></span> glyphicon-th-list</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-ok"></span> glyphicon-ok</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-remove"></span> glyphicon-remove</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-zoom-in"></span> glyphicon-zoom-in</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-zoom-out"></span> glyphicon-zoom-out</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-off"></span> glyphicon-off</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-signal"></span> glyphicon-signal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-cog"></span> glyphicon-cog</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-trash"></span> glyphicon-trash</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-home"></span> glyphicon-home</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-file"></span> glyphicon-file</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-time"></span> glyphicon-time</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-road"></span> glyphicon-road</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-download-alt"></span> glyphicon-download-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-download"></span> glyphicon-download</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-upload"></span> glyphicon-upload</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-inbox"></span> glyphicon-inbox</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-play-circle"></span> glyphicon-play-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-repeat"></span> glyphicon-repeat</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-refresh"></span> glyphicon-refresh</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-list-alt"></span> glyphicon-list-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-lock"></span> glyphicon-lock</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-flag"></span> glyphicon-flag</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-headphones"></span> glyphicon-headphones</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-volume-off"></span> glyphicon-volume-off</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-volume-down"></span> glyphicon-volume-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-volume-up"></span> glyphicon-volume-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-qrcode"></span> glyphicon-qrcode</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-barcode"></span> glyphicon-barcode</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-tag"></span> glyphicon-tag</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-tags"></span> glyphicon-tags</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-book"></span> glyphicon-book</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-bookmark"></span> glyphicon-bookmark</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-print"></span> glyphicon-print</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-camera"></span> glyphicon-camera</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-font"></span> glyphicon-font</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-bold"></span> glyphicon-bold</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-italic"></span> glyphicon-italic</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-text-height"></span> glyphicon-text-height</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-text-width"></span> glyphicon-text-width</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-align-left"></span> glyphicon-align-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-align-center"></span> glyphicon-align-center</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-align-right"></span> glyphicon-align-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-align-justify"></span> glyphicon-align-justify</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-list"></span> glyphicon-list</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-indent-left"></span> glyphicon-indent-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-indent-right"></span> glyphicon-indent-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-facetime-video"></span> glyphicon-facetime-video</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-picture"></span> glyphicon-picture</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-map-marker"></span> glyphicon-map-marker</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-adjust"></span> glyphicon-adjust</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-tint"></span> glyphicon-tint</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-edit"></span> glyphicon-edit</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-share"></span> glyphicon-share</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-check"></span> glyphicon-check</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-move"></span> glyphicon-move</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-step-backward"></span> glyphicon-step-backward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-fast-backward"></span> glyphicon-fast-backward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-backward"></span> glyphicon-backward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-play"></span> glyphicon-play</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-pause"></span> glyphicon-pause</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-stop"></span> glyphicon-stop</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-forward"></span> glyphicon-forward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-fast-forward"></span> glyphicon-fast-forward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-step-forward"></span> glyphicon-step-forward</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-eject"></span> glyphicon-eject</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-chevron-left"></span> glyphicon-chevron-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-chevron-right"></span> glyphicon-chevron-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-plus-sign"></span> glyphicon-plus-sign</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-minus-sign"></span> glyphicon-minus-sign</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-remove-sign"></span> glyphicon-remove-sign</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-ok-sign"></span> glyphicon-ok-sign</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-question-sign"></span> glyphicon-question-sign</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-info-sign"></span> glyphicon-info-sign</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-screenshot"></span> glyphicon-screenshot</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-remove-circle"></span> glyphicon-remove-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-ok-circle"></span> glyphicon-ok-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-ban-circle"></span> glyphicon-ban-circle</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-arrow-left"></span> glyphicon-arrow-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-arrow-right"></span> glyphicon-arrow-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-arrow-up"></span> glyphicon-arrow-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-arrow-down"></span> glyphicon-arrow-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-share-alt"></span> glyphicon-share-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-resize-full"></span> glyphicon-resize-full</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-resize-small"></span> glyphicon-resize-small</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-exclamation-sign"></span> glyphicon-exclamation-sign</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-gift"></span> glyphicon-gift</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-leaf"></span> glyphicon-leaf</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-fire"></span> glyphicon-fire</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-eye-open"></span> glyphicon-eye-open</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-eye-close"></span> glyphicon-eye-close</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-warning-sign"></span> glyphicon-warning-sign</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-plane"></span> glyphicon-plane</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-calendar"></span> glyphicon-calendar</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-random"></span> glyphicon-random</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-comment"></span> glyphicon-comment</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-magnet"></span> glyphicon-magnet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-chevron-up"></span> glyphicon-chevron-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-chevron-down"></span> glyphicon-chevron-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-retweet"></span> glyphicon-retweet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-shopping-cart"></span> glyphicon-shopping-cart</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-folder-close"></span> glyphicon-folder-close</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-folder-open"></span> glyphicon-folder-open</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-resize-vertical"></span> glyphicon-resize-vertical</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-resize-horizontal"></span> glyphicon-resize-horizontal</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-hdd"></span> glyphicon-hdd</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-bullhorn"></span> glyphicon-bullhorn</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-bell"></span> glyphicon-bell</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-certificate"></span> glyphicon-certificate</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-thumbs-up"></span> glyphicon-thumbs-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-thumbs-down"></span> glyphicon-thumbs-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-hand-right"></span> glyphicon-hand-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-hand-left"></span> glyphicon-hand-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-hand-up"></span> glyphicon-hand-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-hand-down"></span> glyphicon-hand-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-circle-arrow-right"></span> glyphicon-circle-arrow-right</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-circle-arrow-left"></span> glyphicon-circle-arrow-left</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-circle-arrow-up"></span> glyphicon-circle-arrow-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-circle-arrow-down"></span> glyphicon-circle-arrow-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-globe"></span> glyphicon-globe</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-wrench"></span> glyphicon-wrench</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-tasks"></span> glyphicon-tasks</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-filter"></span> glyphicon-filter</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-briefcase"></span> glyphicon-briefcase</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-fullscreen"></span> glyphicon-fullscreen</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-dashboard"></span> glyphicon-dashboard</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-paperclip"></span> glyphicon-paperclip</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-heart-empty"></span> glyphicon-heart-empty</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-link"></span> glyphicon-link</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-phone"></span> glyphicon-phone</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-pushpin"></span> glyphicon-pushpin</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-usd"></span> glyphicon-usd</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-gbp"></span> glyphicon-gbp</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sort"></span> glyphicon-sort</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sort-by-alphabet"></span> glyphicon-sort-by-alphabet</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span> glyphicon-sort-by-alphabet-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sort-by-order"></span> glyphicon-sort-by-order</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sort-by-order-alt"></span> glyphicon-sort-by-order-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sort-by-attributes"></span> glyphicon-sort-by-attributes</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span> glyphicon-sort-by-attributes-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-unchecked"></span> glyphicon-unchecked</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-expand"></span> glyphicon-expand</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-collapse-down"></span> glyphicon-collapse-down</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-collapse-up"></span> glyphicon-collapse-up</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-log-in"></span> glyphicon-log-in</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-flash"></span> glyphicon-flash</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-log-out"></span> glyphicon-log-out</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-new-window"></span> glyphicon-new-window</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-record"></span> glyphicon-record</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-save"></span> glyphicon-save</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-open"></span> glyphicon-open</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-saved"></span> glyphicon-saved</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-import"></span> glyphicon-import</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-export"></span> glyphicon-export</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-send"></span> glyphicon-send</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-floppy-disk"></span> glyphicon-floppy-disk</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-floppy-saved"></span> glyphicon-floppy-saved</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-floppy-remove"></span> glyphicon-floppy-remove</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-floppy-save"></span> glyphicon-floppy-save</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-floppy-open"></span> glyphicon-floppy-open</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-credit-card"></span> glyphicon-credit-card</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-transfer"></span> glyphicon-transfer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-cutlery"></span> glyphicon-cutlery</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-header"></span> glyphicon-header</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-compressed"></span> glyphicon-compressed</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-earphone"></span> glyphicon-earphone</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-phone-alt"></span> glyphicon-phone-alt</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-tower"></span> glyphicon-tower</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-stats"></span> glyphicon-stats</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sd-video"></span> glyphicon-sd-video</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-hd-video"></span> glyphicon-hd-video</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-subtitles"></span> glyphicon-subtitles</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sound-stereo"></span> glyphicon-sound-stereo</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sound-dolby"></span> glyphicon-sound-dolby</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sound-5-1"></span> glyphicon-sound-5-1</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sound-6-1"></span> glyphicon-sound-6-1</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-sound-7-1"></span> glyphicon-sound-7-1</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-copyright-mark"></span> glyphicon-copyright-mark</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-registration-mark"></span> glyphicon-registration-mark</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-cloud-download"></span> glyphicon-cloud-download</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-cloud-upload"></span> glyphicon-cloud-upload</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-tree-conifer"></span> glyphicon-tree-conifer</div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><span class="glyphicon glyphicon-tree-deciduous"></span> glyphicon-tree-deciduous</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-touch-punch.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/jquery.slimscroll.min.js"></script>
+        <script src="js/jquery.visible.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=true&amp;libraries=geometry&amp;libraries=places" type="text/javascript"></script>
+        <script src="js/infobox.js"></script>
+        <script src="js/jquery.tagsinput.min.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>

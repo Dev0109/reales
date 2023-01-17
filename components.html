@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>reales | real estate web application</title>
+        <script defer src="js/all.js"></script>
+        <link href="css/all.css" rel="stylesheet" />
+        <link href="css/font-awesome.css" rel="stylesheet">
+
+        <link href="css/simple-line-icons.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="css/datepicker.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="notransition">
+
+        <!-- Header -->
+
+        <div id="header">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="fa fa-home marker"></span>
+                    <span class="logoText">reales</span>
+                </a>
+            </div>
+            <a href="#" class="navHandler"><span class="fa fa-bars"></span></a>
+            <div class="search">
+                <span class="searchIcon icon-magnifier"></span>
+                <input type="text" placeholder="Search for houses, apartments...">
+            </div>
+            <div class="headerUserWraper">
+                <a href="#" class="userHandler dropdown-toggle" data-toggle="dropdown"><span class="icon-user"></span><span class="counter">5</span></a>
+                <a href="#" class="headerUser dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar headerAvatar pull-left" src="images/avatar-1.png" alt="avatar">
+                    <div class="userTop pull-left">
+                        <span class="headerUserName">John Smith</span> <span class="fa fa-angle-down"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+                <div class="dropdown-menu pull-right userMenu" role="menu">
+                    <div class="mobAvatar">
+                        <img class="avatar mobAvatarImg" src="images/avatar-1.png" alt="avatar">
+                        <div class="mobAvatarName">John Smith</div>
+                    </div>
+                    <ul>
+                        <li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+                        <li><a href="profile.html"><span class="icon-user"></span>Profile</a></li>
+                        <li><a href="#"><span class="icon-bell"></span>Notifications <span class="badge pull-right bg-red">5</span></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon-power"></span>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="headerNotifyWraper">
+                <a href="#" class="headerNotify dropdown-toggle" data-toggle="dropdown">
+                    <span class="notifyIcon icon-bell"></span>
+                    <span class="counter">5</span>
+                </a>
+                <div class="dropdown-menu pull-right notifyMenu" role="menu">
+                    <div class="notifyHeader">
+                        <span>Notifications</span>
+                        <a href="#" class="notifySettings icon-settings"></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="notifyList">
+                        <li>
+                            <a href="#">
+                                <img class="avatar pull-left" src="images/avatar-1.png" alt="avatar">
+                                <div class="pulse border-grey"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">Sed ut perspiciatis unde</div>
+                                    <div class="notifyTime">5 minutes ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-red fa fa-envelope-o"></div>
+                                <div class="pulse border-red"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">Lorem Ipsum is simply dummy text</div>
+                                    <div class="notifyTime">20 minutes ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-yellow fa fa-heart-o"></div>
+                                <div class="pulse border-yellow"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">It is a long established fact</div>
+                                    <div class="notifyTime">2 hours ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notifyRound notifyRound-magenta fa fa-paper-plane-o"></div>
+                                <div class="pulse border-magenta"></div>
+                                <div class="notify pull-left">
+                                    <div class="notifyName">There are many variations</div>
+                                    <div class="notifyTime">1 day ago</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="notifyAll">See All</a>
+                </div>
+            </div>
+            <a href="#" class="mapHandler"><span class="icon-map"></span></a>
+            <div class="clearfix"></div>
+        </div>
+
+        <!-- Left Side Navigation -->
+
+        <div id="leftSide">
+            <nav class="leftNav scrollable">
+                <div class="search">
+                    <span class="searchIcon icon-magnifier"></span>
+                    <input type="text" placeholder="Search for houses, apartments...">
+                    <div class="clearfix"></div>
+                </div>
+                <ul>
+                    <li><a href="explore.html"><span class="navIcon icon-compass"></span><span class="navLabel">Explore</span></a></li>
+                    <li><a href="single.html"><span class="navIcon icon-home"></span><span class="navLabel">Single</span></a></li>
+                    <li><a href="add.html"><span class="navIcon icon-plus"></span><span class="navLabel">New</span></a></li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-drop"></span><span class="navLabel">Colors</span><span class="fa fa-angle-left arrowRight"></span><span class="badge bg-yellow">5</span></a>
+                        <ul class="colors">
+                            <li><a href="#">Red <span class="fa fa-circle-o c-red icon-right"></span></a></li>
+                            <li><a href="#">Green <span class="fa fa-circle-o c-green icon-right"></span></a></li>
+                            <li><a href="#">Blue <span class="fa fa-circle-o c-blue icon-right"></span></a></li>
+                            <li><a href="#">Yellow <span class="fa fa-circle-o c-yellow icon-right"></span></a></li>
+                            <li><a href="#">Magenta <span class="fa fa-circle-o c-magenta icon-right"></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-layers"></span><span class="navLabel">Elements</span><span class="fa fa-angle-left arrowRight"></span></a>
+                        <ul>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="icons.html">Icons <span class="badge pull-right bg-yellow">841</span></a></li>
+                            <li><a href="grid.html">Grid</a></li>
+                            <li><a href="widgets.html">Widgets</a></li>
+                            <li><a href="components.html">Components</a></li>
+                            <li><a href="lists.html">Lists</a></li>
+                            <li><a href="tables.html">Tables</a></li>
+                            <li><a href="form.html">Form</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSub">
+                        <a href="#"><span class="navIcon icon-link"></span><span class="navLabel">Pages</span><span class="fa fa-angle-left arrowRight"></span></a>
+                        <ul>
+                            <li><a href="signin.html">Sign In</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="index.html">Homepage Slideshow</a></li>
+                            <li><a href="index-map.html">Homepage Map</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="leftUserWraper dropup">
+                <a href="#" class="avatarAction dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar" src="images/avatar-1.png" alt="avatar"><span class="counter">5</span>
+                    <div class="userBottom pull-left">
+                        <span class="bottomUserName">John Smith</span> <span class="fa fa-angle-up pull-right arrowUp"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+                    <li><a href="profile.html"><span class="icon-user"></span>Profile</a></li>
+                    <li><a href="#"><span class="icon-bell"></span>Notifications <span class="badge pull-right bg-red">5</span></a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><span class="icon-power"></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="closeLeftSide"></div>
+
+        <!-- Content -->
+
+        <div id="wrapper" class="full">
+            <div id="mapView" class="min"><div class="mapPlaceholder"><span class="fa fa-spin fa-spinner"></span> Loading map...</div></div>
+            <div id="content" class="max">
+                <div class="components">
+                    <h4>Components</h4>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="panel panel-default dd">
+                                <a href="#ddPanel" class="btn btn-o btn-default btn-block btn-lg align-left" data-toggle="collapse">Dropdown Panel<span class="fa fa-angle-down pull-right"></span></a>
+                                <div id="ddPanel" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                                    </div>
+                                </div>
+                            </div>
+                            <ol class="breadcrumb">
+                                <li><a href="#"><span class="icon-home"></span> Home</a></li>
+                                <li><a href="#"><span class="icon-layers"></span> Components</a></li>
+                                <li class="active">Breadcrumb</li>
+                            </ol>
+                            <ol class="breadcrumb">
+                                <li><a href="#"><span class="badge">1</span> Home</a></li>
+                                <li><a href="#"><span class="badge">2</span> Components</a></li>
+                                <li class="active"><span class="badge">3</span> Breadcrumb</li>
+                            </ol>
+                            <div class="labelsContainer">
+                                <span class="label label-default">Default</span>
+                                <span class="label label-primary">Primary</span>
+                                <span class="label label-success">Success</span>
+                                <span class="label label-info">Info</span>
+                                <span class="label label-warning">Warning</span>
+                                <span class="label label-danger">Danger</span>
+                                <span class="label label-green">Green</span>
+                                <span class="label label-red">Red</span>
+                                <span class="label label-blue">Blue</span>
+                                <span class="label label-yellow">Yellow</span>
+                                <span class="label label-magenta">Magenta</span>
+                            </div>
+                            <div class="badgesContainer">
+                                <span class="badge badge-default">5</span>
+                                <span class="badge badge-primary">11</span>
+                                <span class="badge badge-success">16</span>
+                                <span class="badge badge-info">22</span>
+                                <span class="badge badge-warning">27</span>
+                                <span class="badge badge-danger">33</span>
+                                <span class="badge badge-green">38</span>
+                                <span class="badge badge-red">49</span>
+                                <span class="badge badge-blue">57</span>
+                                <span class="badge badge-yellow">69</span>
+                                <span class="badge badge-magenta">70</span>
+                            </div>
+                            <div class="panel panel-default">
+                            <div class="panel-heading">Progress Bars</div>
+                                <div class="panel-body">
+                                    <div class="progress progress-lg">
+                                        <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%" data-toggle="tooltip" title="40%">
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%" data-toggle="tooltip" title="20%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" data-toggle="tooltip" title="60%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar progress-bar-yellow" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%" data-toggle="tooltip" title="80%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-lg progress-striped">
+                                        <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%" data-toggle="tooltip" title="40%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%" data-toggle="tooltip" title="20%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-sm progress-striped">
+                                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" data-toggle="tooltip" title="60%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-xs progress-striped">
+                                        <div class="progress-bar progress-bar-yellow" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%" data-toggle="tooltip" title="80%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-lg progress-striped active">
+                                        <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%" data-toggle="tooltip" title="40%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%" data-toggle="tooltip" title="20%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-sm progress-striped active">
+                                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" data-toggle="tooltip" title="60%">
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-xs progress-striped active">
+                                        <div class="progress-bar progress-bar-yellow" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%" data-toggle="tooltip" title="80%">
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" style="width: 35%" data-toggle="tooltip" title="35%"></div>
+                                        <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%" data-toggle="tooltip" title="20%"></div>
+                                        <div class="progress-bar progress-bar-danger" style="width: 10%" data-toggle="tooltip" title="10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="tabsContainer">
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                    <li class="active"><a href="#home" role="tab" data-toggle="tab"><span class="icon-home"></span> HOME</a></li>
+                                    <li><a href="#profile" role="tab" data-toggle="tab"><span class="icon-user"></span> PROFILE</a></li>
+                                    <li><a href="#notifications" role="tab" data-toggle="tab"><span class="icon-bubbles"></span> NOTIFICATIONS</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="home">Home</div>
+                                    <div class="tab-pane fade" id="profile">Profile</div>
+                                    <div class="tab-pane fade" id="notifications">Notifications</div>
+                                </div>
+                            </div>
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#"><span class="fa fa-angle-left"></span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"></span></a></li>
+                            </ul>
+                            <ul class="pagination pagination-round">
+                                <li class="disabled"><a href="#"><span class="fa fa-angle-left"></span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"></span></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <ul class="pagination pagination-sm">
+                                <li class="disabled"><a href="#"><span class="fa fa-angle-left"></span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"></span></a></li>
+                            </ul>
+                            <ul class="pagination pagination-round pagination-sm">
+                                <li class="disabled"><a href="#"><span class="fa fa-angle-left"></span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"></span></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <div class="alert alert-success alert-dismissible fade in" role="alert">
+                                <div class="icon"><span class="fa fa-check-circle"></span></div>
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <strong>Well done!</strong> You successfully read this important alert message.
+                            </div>
+                            <div class="alert alert-info alert-dismissible fade in" role="alert">
+                                <div class="icon"><span class="fa fa-info-circle"></span></div>
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                            </div>
+                            <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                                <div class="icon"><span class="fa fa-warning"></span></div>
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                            </div>
+                            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                                <div class="icon"><span class="fa fa-ban"></span></div>
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                            </div>
+                            <div class="tooltipsContainer">
+                                <a class="btn btn-round btn-green" data-toggle="tooltip" data-tooltip-class="green" data-placement="left" title="Tooltip on left">Tooltip on left</a>
+                                <a class="btn btn-round btn-red" data-toggle="tooltip" data-tooltip-class="red" data-placement="top" title="Tooltip on top">Tooltip on top</a>
+                                <a class="btn btn-round btn-yellow" data-toggle="tooltip" data-tooltip-class="yellow" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</a>
+                                <a class="btn btn-round btn-magenta" data-toggle="tooltip" data-tooltip-class="magenta" data-placement="right" title="Tooltip on right">Tooltip on right</a>
+                            </div>
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default dd">
+                                    <a href="#ddPanel-1" class="btn btn-o btn-default btn-block btn-lg align-left" data-toggle="collapse" data-parent="#accordion">Collapsible Group Item #1<span class="fa fa-angle-down pull-right"></span></a>
+                                    <div id="ddPanel-1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default dd">
+                                    <a href="#ddPanel-2" class="btn btn-o btn-default btn-block btn-lg align-left" data-toggle="collapse" data-parent="#accordion">Collapsible Group Item #2<span class="fa fa-angle-down pull-right"></span></a>
+                                    <div id="ddPanel-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default dd">
+                                    <a href="#ddPanel-3" class="btn btn-o btn-default btn-block btn-lg align-left" data-toggle="collapse" data-parent="#accordion">Collapsible Group Item #3<span class="fa fa-angle-down pull-right"></span></a>
+                                    <div id="ddPanel-3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-touch-punch.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/jquery.slimscroll.min.js"></script>
+        <script src="js/jquery.visible.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=true&amp;libraries=geometry&amp;libraries=places" type="text/javascript"></script>
+        <script src="js/infobox.js"></script>
+        <script src="js/jquery.tagsinput.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>
